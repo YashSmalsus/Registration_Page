@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/FTIL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/FIRST_NAME_EDIT_TEXT_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter First Name"
+                android:width="4000dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:inputType="textPersonName"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/STIL"
+            android:layout_below="@+id/FTIL"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/LAST_NAME_EDIT_TEXT_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Last Name"
+                android:width="4000dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TTIL"
+            android:layout_below="@+id/STIL"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ccp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PHONE_NUMBER_EDIT_TEXT_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Phone Number"
+                android:width="4000dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:inputType="phone">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/FOTIL"
+            android:layout_below="@+id/TTIL"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/USER_NAME_EDIT_TEXT_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Set User Name"
+                android:width="4000dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:inputType="textPersonName"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/SITIL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FOTIL">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/SELECT_DATE_EDIT_TEXT_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="4000dp"
+                android:hint="Select Date of Birth"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:inputType="date"
+                android:onClick="callDatePicker"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/SETIL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SITIL">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Gender"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"/>
+
+            <RadioGroup
+                android:id="@+id/GENDER_RADIO_GROUP_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:id="@+id/FEMALE_RADIO_BUTTON_ID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"/>
+
+                <RadioButton
+                    android:id="@+id/MALE_RADIO_BUTTON_ID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Male"/>
+
+                <RadioButton
+                    android:id="@+id/OTHERS_RADIO_BUTTON_ID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Others" />
+
+
+            </RadioGroup>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ETIL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SETIL">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EMAIL_EDIT_TEXT_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="4000dp"
+                android:hint="Enter Email ID"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/NTIL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ETIL"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PASSWORD_EDIT_TEXT_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="368dp"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/TETIL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="150dp"
+            android:text="Register"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/NTIL"
+            android:layout_marginTop="80dp"
+            android:textColor="#C5E79E"
+            android:background="#5B9C10"/>
+
+        <TextView
+            android:id="@+id/ELTIL"
+            android:layout_below="@+id/TETIL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Existing User? Please Log In"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</ScrollView>

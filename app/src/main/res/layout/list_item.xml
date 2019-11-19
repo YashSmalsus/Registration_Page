@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CARD_VIEW_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:id="@+id/CARD_VIEW_LINEAR_LAYOUT_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#ffffff">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/IMAGE_VIEW_ID"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+
+            <TextView
+                android:id="@+id/TEXT_VIEW_NAME_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/IMAGE_VIEW_ID"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_toEndOf="@+id/IMAGE_VIEW_ID" />
+
+            <TextView
+                android:id="@+id/TEXT_VIEW_LOCATION"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TEXT_VIEW_NAME_ID"
+                android:layout_toRightOf="@id/IMAGE_VIEW_ID"
+                android:paddingLeft="10dp"/>
+
+
+            <!--<TextView
+                android:id="@+id/TEXT_VIEW_NAME_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/TEXT_VIEW_USER_NAME"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/TEXT_VIEW_EMAIL_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/TEXT_VIEW_PHONE_NUMBER"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+-->
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

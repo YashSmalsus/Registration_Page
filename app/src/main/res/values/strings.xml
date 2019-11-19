@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Registration Form</string>
+
+    <string name="Email_Id_Hint">Email</string>
+    <string name="Password_Hint">Password</string>
+
+    <string name="SignUpText">Register</string>
+    <string name="SignInText">Existing User? Please Login In</string>
+    <string name="Sign_In">Sign In</string>
+    <string name="new_user_register">New User, Please Register</string>
+
+    <string-array name="number_codes">
+        <item>India +91</item>
+        <item>UAE +971</item>
+        <item>Afghanistan +93</item>
+    </string-array>
+
+
+</resources>
